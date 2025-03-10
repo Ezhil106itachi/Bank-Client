@@ -1,0 +1,97 @@
+/* Background Styling */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Form Container */
+.custom-form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 450px;
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.register-heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #ffcc00;
+}
+
+/* Form Inputs */
+.custom-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    transition: 0.3s;
+}
+
+.custom-input:focus {
+    border-color: #ff5733;
+    outline: none;
+}
+
+/* Placeholder Styling */
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button Styling */
+.custom-button {
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.custom-button:hover {
+    background: #ff5733;
+}
+
+.custom-button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+/* Success & Error Messages */
+.alert-success {
+    background: rgba(0, 255, 0, 0.2);
+    color: lime;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.alert-danger {
+    background: rgba(255, 0, 0, 0.2);
+    color: red;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .custom-form-container {
+        width: 90%;
+        padding: 30px;
+    }
+}

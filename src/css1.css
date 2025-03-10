@@ -1,0 +1,95 @@
+/* Background Styling */
+.cashback-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #556270);
+}
+
+/* Form Container */
+.cashback-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.cashback-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Inputs */
+.cashback-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.cashback-input:focus {
+    border-color: #ff9f43;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Placeholder Styling */
+.cashback-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button Styling */
+.cashback-button {
+    width: 100%;
+    padding: 12px;
+    background: #ff9f43;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cashback-button:hover {
+    background: #ff6b6b;
+}
+
+/* Success & Error Messages */
+.cashback-alert {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.cashback-alert-success {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.cashback-alert-error {
+    background: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cashback-container {
+        width: 90%;
+    }
+}
